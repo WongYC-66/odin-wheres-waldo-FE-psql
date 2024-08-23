@@ -49,8 +49,8 @@ function ScoreBoard(props) {
           </tr>
         </thead>
         <tbody>
-          {userList.map(({ _id, name, time }, i) =>
-            <tr key={_id}>
+          {userList.map(({ id, name, time }, i) =>
+            <tr key={id}>
               <th>{i + 1}</th>
               <td>{name}</td>
               <td>
